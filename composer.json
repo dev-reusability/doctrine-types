@@ -1,0 +1,32 @@
+{
+    "name": "dev-reusability/doctrine-types",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "doctrine/dbal": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan-phpunit": "^1.1",
+        "phpstan/phpstan-strict-rules": "^1.4",
+        "marioblazek/coding-standard": "^1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DevReusability\\DoctrineTypes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DevReusability\\DoctrineTypes\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/phpunit --colors=always",
+        "test-coverage": "@php vendor/bin/phpunit --coverage-html build",
+        "phpstan": "@php vendor/bin/phpstan analyse -c phpstan.neon --level=8 --ansi src",
+        "format": "@php vendor/bin/php-cs-fixer fix"
+    }
+}
