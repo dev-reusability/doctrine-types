@@ -1,6 +1,12 @@
 {
     "name": "dev-reusability/doctrine-types",
     "type": "library",
+    "description": "A doctrine types reusable library",
+    "keywords": [
+        "doctrine",
+        "types"
+    ],
+    "homepage": "https://github.com/dev-reusability/doctrine-types",
     "require": {
         "php": "^8.0",
         "doctrine/dbal": "^3.0"
